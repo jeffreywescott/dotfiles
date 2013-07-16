@@ -1,0 +1,39 @@
+[user]
+	name = Jeffrey Wescott
+	email = jeffrey.wescott@gmail.com
+[github]
+	user = jeffreywescott
+	token = 0fd79fa57fbd2887ddcd3faa36987de1
+[core]
+	excludesfile = /Users/jeffrey/.gitignore
+	autocrlf = input
+	safecrlf = true
+[branch]
+	autosetuprebase = always
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  br = branch
+  lg   = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --graph --abbrev-commit -- hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[push]
+  default = tracking
+[color]
+  branch = auto
+  diff   = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local   = yellow
+  remote  = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
+[color "status"]
+  added     = green
+  changed   = yellow
+  untracked = cyan
