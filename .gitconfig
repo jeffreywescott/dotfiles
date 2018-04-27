@@ -1,39 +1,53 @@
-[user]
-	name = Jeffrey Wescott
-	email = jeffrey.wescott@gmail.com
-[github]
-	user = jeffreywescott
-	token = 0fd79fa57fbd2887ddcd3faa36987de1
 [core]
-	excludesfile = /Users/jeffrey/.gitignore
-	autocrlf = input
-	safecrlf = true
-[branch]
-	autosetuprebase = always
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/jeffrey/.gitignore
 [alias]
-  co = checkout
+  st = status
   ci = commit
-  st = status -sb
   br = branch
-  lg   = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --graph --abbrev-commit -- hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
-[push]
-  default = tracking
+  co = checkout
+  df = diff
+  lg = log -p
+  who = shortlog -s --
+  up = pull
+  pr = pull --rebase
+  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  switch = !legit switch \"$@\"
+  branches = !legit branches
+  sprout = !legit sprout \"$@\"
+  unpublish = !legit unpublish \"$@\"
+  harvest = !legit harvest \"$@\"
+  sync = !legit sync \"$@\"
+  publish = !legit publish \"$@\"
+  graft = !legit graft \"$@\"
+  pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
+[github]
+  user = jeffreywescott
+  token = <API token> # https://github.com/settings/applications
+  email = jeffrey@learnersguild.org
+[github "user"]
+  user = jeffreywescott
+  token = <API token>
+  email = jeffrey@learnersguild.org
+[user]
+  name = jeffreywescott
+  email = jeffrey@learnersguild.org
 [color]
-  branch = auto
-  diff   = auto
+  ui = true
+  diff = auto
   status = auto
-[color "branch"]
-  current = yellow reverse
-  local   = yellow
-  remote  = green
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old  = red bold
-  new  = green bold
-[color "status"]
-  added     = green
-  changed   = yellow
-  untracked = cyan
+  branch = auto
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[diff "ruby"]
+  funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
+[push]
+  default = current
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[merge]
+  tool = opendiff
