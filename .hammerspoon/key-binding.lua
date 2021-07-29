@@ -15,7 +15,7 @@ local function windowBind(hyper, keyFuncTable)
 end
 
 -- * Move window to screen
-windowBind(mash.position, {
+windowBind(mash.screen, {
   left = pos.throwLeft,
   right = pos.throwRight
 })

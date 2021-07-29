@@ -1,4 +1,5 @@
 mash = {
+  screen = {"ctrl", "cmd"},
   position = {"cmd", "shift"},
   utils    = {"cmd", "shift", "alt"}
 }
