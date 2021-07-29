@@ -23,13 +23,13 @@ windowBind(mash.position, {
 -- * Set Window Position on screen
 windowBind(mash.position, {
   m = pos.maximizeWindow,
+  l = pos.leftHalf,
+  r = pos.rightHalf,
   c = pos.centerOnScreen,
-  left = pos.leftHalf,
-  right = pos.rightHalf,
-  up = pos.topHalf,
-  down = pos.bottomHalf,
-  q = pos.topLeft,
-  w = pos.topRight,
-  e = pos.bottomLeft,
-  r = pos.bottomRight
+  t = pos.topHalf,
+  b = pos.bottomHalf,
+  a = pos.topLeft,
+  s = pos.topRight,
+  d = pos.bottomLeft,
+  f = pos.bottomRight
 })
