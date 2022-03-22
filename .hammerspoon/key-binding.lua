@@ -29,7 +29,7 @@ windowBind(mash.position, {
   t = pos.topHalf,
   b = pos.bottomHalf,
   a = pos.topLeft,
-  s = pos.topRight,
-  d = pos.bottomLeft,
+  s = pos.bottomLeft,
+  d = pos.topRight,
   f = pos.bottomRight
 })
