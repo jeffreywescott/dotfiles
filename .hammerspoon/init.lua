@@ -6,5 +6,6 @@ mash = {
 
 require('setup')
 require('key-binding')
+require('autolayout').start()
 
 hs.alert.show("Hammerspoon!")
