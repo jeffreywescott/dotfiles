@@ -4,6 +4,7 @@ export PATH="\
 $HOME/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
+/opt/homebrew/bin:\
 $PATH:\
 /Applications/Visual Studio Code.app/Contents/Resources/app/bin\
 "
