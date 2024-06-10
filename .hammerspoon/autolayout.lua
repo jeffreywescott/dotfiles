@@ -19,8 +19,9 @@ layoutConfig['us.zoom.xos'] = {
 
 module = {}
 
+local numOfScreens = #hs.screen.allScreens()
+
 module.autoLayout = function()
-    local numOfScreens = #hs.screen.allScreens()
     for _, appLayoutConfig in pairs(layoutConfig) do
         -- if we have a preferred display
         application = hs.application.find(appLayoutConfig.bundleID)
