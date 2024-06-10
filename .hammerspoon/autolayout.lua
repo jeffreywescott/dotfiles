@@ -11,8 +11,8 @@ layoutConfig['com.brave.Browser'] = {
     preferredDisplay = 2,
     preferredPosition = pos.leftHalf
 }
-layoutConfig['com.flexibits.fantastical2.mac'] = {
-    bundleID = 'com.flexibits.fantastical2.mac',
+layoutConfig['us.zoom.xos'] = {
+    bundleID = 'us.zoom.xos',
     preferredDisplay = 2,
     preferredPosition = pos.rightHalf
 }
