@@ -2,6 +2,7 @@ export VSCODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export EDITOR="$VSCODE_BIN/code -w"
 export PATH="\
 $HOME/bin:\
+/opt/homebrew/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
 /opt/homebrew/bin:\
