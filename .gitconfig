@@ -24,14 +24,14 @@
 [github]
   user = jeffreywescott
   token = <API token> # https://github.com/settings/applications
-  email = jeffrey@learnersguild.org
+  email = jeffrey.wescott@gmail.com
 [github "user"]
   user = jeffreywescott
   token = <API token>
-  email = jeffrey@learnersguild.org
+  email = jeffrey.wescott@gmail.com
 [user]
   name = jeffreywescott
-  email = jeffrey@learnersguild.org
+	email = jeffrey.wescott@gmail.com
 [color]
   ui = true
   diff = auto
