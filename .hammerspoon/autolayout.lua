@@ -6,6 +6,11 @@ layoutConfig['com.google.Chrome'] = {
     preferredDisplay = 2,
     preferredPosition = pos.leftHalf
 }
+layoutConfig['com.apple.Safari'] = {
+    bundleID = 'com.apple.Safari',
+    preferredDisplay = 2,
+    preferredPosition = pos.leftHalf
+}
 layoutConfig['com.brave.Browser'] = {
     bundleID = 'com.brave.Browser',
     preferredDisplay = 2,
