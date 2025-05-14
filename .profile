@@ -1,5 +1,4 @@
-export VSCODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export EDITOR="$VSCODE_BIN/code -w"
+export EDITOR="cursor -w"
 export PATH="\
 $HOME/bin:\
 /opt/homebrew/bin:\
@@ -7,7 +6,6 @@ $HOME/bin:\
 /usr/local/share/npm/bin:\
 /opt/homebrew/bin:\
 $PATH:\
-/Applications/Visual Studio Code.app/Contents/Resources/app/bin\
 "
 
 export NVM_DIR="$HOME/.nvm"
