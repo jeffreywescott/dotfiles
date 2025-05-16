@@ -1,6 +1,7 @@
 export EDITOR="cursor -w"
 export PATH="\
 $HOME/bin:\
+$HOME/go/bin:\
 /opt/homebrew/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
