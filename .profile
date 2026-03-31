@@ -1,5 +1,6 @@
 export EDITOR="cursor -w"
 export PATH="\
+$HOME/.local/bin:\
 $HOME/bin:\
 $HOME/go/bin:\
 /opt/homebrew/bin:\
